@@ -2,7 +2,7 @@
 margin:0;
 padding:0;
 max-width:100%;
-border:1px solid grey;
+/*border:1px solid grey;*/
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -216,27 +216,46 @@ footer nav a {
 }
 .top{
     display:flex;
-    flex-wrap: wrap;
     justify-content: center;
+    border:2px solid red;
 }
-.pw{
-    display:flex;
-    justify-content: space-between;
-    width:50%;
-}
-.light img{
-    background-image: url(img/jumbo.jpg);
-    background-size: cover;
-    height:21vh;
+.top img{
+    margin-top: 25px;
 }
 nav{
     display:flex;
     justify-content: space-evenly;
+    
+}
+nav a{
+    margin:60px;
+}
+button{
+    background-color: #fff;
+    border: none;
+    font-weight: bold;
+    font-size: smaller;
+}
+.light img{
+    background-image: url(img/jumbo.jpg);
+    background-size: cover;
+    height:38vh;
+    padding:0 19% 1% 19%;
+}
+.point{
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction: row;
 }
 .red{
     background-color: white;
     font-weight: bolder;
     font-size: 12px;
+}
+.high p{
+  font-weight: 600;
+  padding:0 0 2% 0;
+  border-bottom: 1px dashed black;
 }
 .frame{
     display:flex;
@@ -250,25 +269,90 @@ nav{
     flex-flow:nowrap;
     align-content: space-between;
     text-align:center;
-    padding:10% auto;
+    padding:0 auto;
 }
-.onep{
-    display:flex;
-    flex-direction: column;
-}
+
 .onea{
     display:flex;
     flex-direction: column;
+    padding:0 1% 0 0;
+    border-bottom: 1px dashed black;
+}
+.onea, h2 p{
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    font-weight: 600;
 }
 .oneb{
     display:flex;
     flex-direction: column;
+    padding:0 0 0 1%;
+    border-bottom: 1px dashed black;
+}
+.oneb, h2 p{
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    font-weight: 600;
+}
+.onep{
+    display:flex;
+    flex-direction: column;
+    padding: 5% 1% 0 0;
+    border-bottom: 1px dashed black;
+}
+.onep, h2 p{
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    font-weight: 600;
 }
 .onec{
     display:flex;
     flex-direction: column;
+    padding:5% 0 0 1%;
+    border-bottom: 1px dashed black;
+}
+.onec, h2 p{
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    font-weight: 600;
 }
 .workt{
     display:flex;
+    flex-direction: column;
     padding: 2% 15%;
+}
+.workt, p{
+    font-weight: 600;
+}
+.frame .onea button{
+    border:1px solid black;
+    padding:10px 0 10px 0 ;
+    display:flex;
+    justify-content:flex-start;
+    border-radius: 10px;
+}
+.frame .oneb button{
+    border:1px solid black;
+    padding:10px 0 10px 0 ;
+    display:flex;
+    justify-content:flex-start;
+    border-radius: 10px;
+}
+.wire .onep button{
+    border:1px solid black;
+    padding:10px 0 10px 0 ;
+    display:flex;
+    justify-content:flex-start;
+    border-radius: 10px;
+}
+.wire .onec button{
+    border:1px solid black;
+    padding:10px 0 10px 0 ;
+    display:flex;
+    justify-content:flex-start;
+    border-radius: 10px;
 }
